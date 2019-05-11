@@ -31,7 +31,7 @@ $background-opacity: 0.9;
 }
 
 body {
-    include background;
+    @include background;
     background: $primary-color;
     color: #fff;
     height: 100%;
