@@ -1,0 +1,22 @@
+{
+  "name": "able.github.io",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chitrakarma/able.github.io.git"
+  },
+  "author": "Chitransh Vishwakarma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chitrakarma/able.github.io/issues"
+  },
+  "homepage": "https://github.com/chitrakarma/able.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
