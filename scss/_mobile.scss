@@ -55,9 +55,17 @@
         margin-top: 10vh;
     }
 
-    main {
-        .lg-heading {
-            font-size: 3rem;
-        }
+    main#home .lg-heading {
+        font-size: 3rem;
+    }
+
+    main#home .sm-heading {
+        font-size: 0.7rem;
+    }
+}
+
+@include mediaXs {
+    main#home .lg-heading {
+        font-size: 2.5rem;
     }
 }
