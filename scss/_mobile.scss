@@ -47,6 +47,10 @@
             height: 150px;
         }
     }
+
+    main#home .lg-heading {
+        font-size: 4rem;
+    }
 }
 
 // Smartphones 
@@ -65,7 +69,18 @@
 }
 
 @include mediaXs {
-    main#home .lg-heading {
-        font-size: 2.5rem;
+    main#home {
+        .lg-heading {
+            font-size: 2.5rem;
+            text-align: left;
+        }
+
+        .sm-heading {
+            text-align: left;
+        }
+
+        .icons {
+            text-align: left;
+        }
     }
 }

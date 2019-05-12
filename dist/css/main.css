@@ -165,7 +165,9 @@
   .menu-branding .portrait {
     background: url(../img/portrait-small.png);
     width: 150px;
-    height: 150px; } }
+    height: 150px; }
+  main#home .lg-heading {
+    font-size: 4rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -177,7 +179,12 @@
 
 @media screen and (max-width: 400px) {
   main#home .lg-heading {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem;
+    text-align: left; }
+  main#home .sm-heading {
+    text-align: left; }
+  main#home .icons {
+    text-align: left; } }
 
 * {
   -webkit-box-sizing: border-box;
