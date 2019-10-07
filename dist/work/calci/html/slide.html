@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Automated slideshow
+        </title>
+        <script src="../js/slide.js"></script>
+    </head>
+    <body onload="carousel()">
+        <style>
+            .mySlides{
+                margin-left: 25%;
+                margin-top: 5%;
+            }
+            #one{
+                background-color: blue;
+                height: 30em;
+                width: 40em;
+                display: none;
+                transition: 2s;
+                -webkit-animation: fadein 1s;
+            }
+            @-webkit-keyframes fadein {
+                from { 
+                    opacity: 0; 
+                }
+                to{ 
+                    opacity: 1; 
+                }
+            }
+            #two{
+                background-color: red;
+                height: 30em;
+                width: 40em;
+                display: none;
+                transition: 1s;
+                -webkit-animation: fadein 1s;
+            }
+            #three{
+                background-color: pink;
+                height: 30em;
+                width: 40em;
+                display: none;
+                transition: 1s;
+                -webkit-animation: fadein 1s;
+            }
+            #four{
+                background-color: orange; 
+                height: 30em;
+                width: 40em;     
+                display: none;          
+                transition: 1s;
+                -webkit-animation: fadein 1s;
+            }
+        </style>
+        <div class="mySlides" >
+            <div id="one"></div>
+        </div>
+        <div class="mySlides" >
+            <div id="two"></div>
+        </div>
+        <div class="mySlides" >
+            <div id="three"></div>
+        </div>
+        <div class="mySlides" >
+            <div id="four"></div>
+        </div>
+    </body>
+</html>

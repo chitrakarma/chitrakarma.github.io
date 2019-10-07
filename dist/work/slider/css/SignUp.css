@@ -1,0 +1,59 @@
+#fname{
+    height: 2em;
+    width: 15em;
+    display: inline-block;
+}
+#lname{
+    height: 2em;
+    width: 15em;
+    display: inline-block;
+}
+#box{
+    height: 35em;
+    width: 30em;
+    background-color: skyblue;
+    margin-top: 3%;
+    transition: 0.5s;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+}
+#box:hover{
+    box-shadow: 5px 5px 5px skyblue, -5px -5px 5px skyblue, -5px 5px 5px skyblue, 5px -5px 5px skyblue;
+}
+input[type="text"]{
+    height: 3em;
+    width: 25em;
+    display: block;
+    margin-top: 6%; 
+    border-radius: 5px;
+}
+input[type="submit"]{
+    height: 3em;
+    width: 10em;
+    display: inline-block;
+    margin-top: 10%;
+    margin-right: 8%;
+    border-radius: 5px;
+}
+input[type="reset"]{
+    height: 3em;
+    width: 10em;
+    display: inline-block;
+    margin-top: 10%;
+    border-radius: 5px;
+    margin-left: 7%;
+}
+input[type="date"]{
+    height: 3em;
+    width: 25em;
+    display: block;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+input[type="password"]{
+    height: 3em;
+    width: 25em;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5%;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            angular js
+        </title>
+        <script src="../js/angular/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myApp">
+            <!-- directive: me-creating-directives -->
+        </div>
+        <script>
+            var app = angular.module("myApp", []);
+            app.directive("meCreatingDirectives",function(){
+                return{
+                    restrict: "M",
+                    replace: true,
+                    template : "<h2>I made a directive of my own!</h2>"
+                };
+            });
+        </script>
+    </body>
+</html>

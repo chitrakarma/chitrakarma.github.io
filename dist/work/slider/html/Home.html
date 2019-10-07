@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome | Home
+        </title>
+        <script src="../js/Home.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/Home.css" />
+     <!--   <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.css" /> -->
+    </head>
+    <body bgcolor="skyblue">
+            <div id="topMenu">
+                    <a href="Login.html"><div id="login">LogIn</div></a>
+                    <a href="SignUp.html"><div id="signup">SignUp</div></a>
+            </div>
+        <center>
+            <div class="container">
+                <div id="left"></div>    <!-- left button -->
+                <div id="one" onclick="change('fourLeft','threeLeft','twoLeft','one','twoRight','threeRight','fourRight')"></div>
+                <div id="twoRight" onclick="change('threeLeft','twoLeft','one','twoRight','threeRight','fourRight','fourLeft')"></div>
+                <div id="twoLeft" onclick="change('fourRight','fourLeft','threeLeft','twoLeft','one','twoRight','threeRight')"></div>
+                <div id="threeRight" onclick="change('twoLeft','one','twoRight','threeRight','fourRight','fourLeft','threeLeft')"></div>
+                <div id="threeLeft" onclick="change('threeRight','fourRight','fourLeft','threeLeft','twoLeft','one','twoRight')"></div>
+                <div id="fourRight" onclick="change('one','twoRight','threeRight','fourRight','fourLeft','threeLeft','twoLeft')"></div>
+                <div id="fourLeft" onclick="change('twoRight','threeRight','fourRight','fourLeft','threeLeft','twoLeft','one')"></div> 
+                <div id="right"></div>    <!-- right button -->
+            </div>
+        </center>
+            <div id="mainButton" onmouseover="changeButton()" onmouseout="changeBack()" ></div>
+    </body>
+</html>

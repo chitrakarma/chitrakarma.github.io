@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            validating user input with ajs
+        </title>
+        <script src="../js/angular/angular.min.js" ></script>
+    </head>
+    <body>
+        <form ng-app="" name="myForm">
+            Email:
+            <input type="email" name="myAddr" ng-model="text" />
+            <span ng-show="myForm.myAddr.$error.email">Not a valid email address</span>
+        </form>
+    </body>
+</html>
