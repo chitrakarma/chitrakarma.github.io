@@ -4,41 +4,60 @@
         <title>
             Welcome | Home
         </title>
+        <!-- stylesheet -->
         <link rel="stylesheet" type="text/css" href="../css/home.css" />
+
+        <!-- bootstrap stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.css" />
+
+        <!-- script -->
         <script src="../js/home.js"></script>
+
+        <!-- bootstrap script -->
+        <script src="../bs/js/bootstrap.js"></script>
     </head>
     <body>
-        <div class="header">
-            <div class="innerHeader">
-                <div class="logo">
-                    <a href="">
-                        Web Designing
-                    </a>
-                </div>
-                <div class="headerLink">
-                    <a href="">
-                        Login
-                    </a>
-                </div>
+        <!-- navigation bar  -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">$ Projects/E-Commerce/</a>
+
+            <!-- Toggler/collapsible Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log In</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
         <div class="content">
             <div class="bannerImage">
                 <center>
-                <div class="innerBannerImage">
-                    <div class="bannerContent">
-                        <h1>Design the Web</h1>
-                        <p>15% off for new users</p>
-                        <a href="" class="button">Sign Up</a>
+                    <div class="innerBannerImage">
+                        <div class="bannerContent">
+                            <h1>Design the Web</h1>
+                            <p>15% off for new users</p>
+                            <a href="" class="button">Sign Up</a>
+                        </div>
                     </div>
-                </div>
                 </center>
             </div>
             <div class="container">
                 <div class="items">
                     <a href="#">
                         <center>
-                            <img src="../media/html.png" class="thumbnail"/>
+                            <img src="../media/html.png" class="thumbnail" />
                             <div class="caption">
                                 <h2>HTML5</h2>
                                 <p>Provides the required structure.</p>
@@ -47,9 +66,13 @@
                     </a>
                 </div>
                 <div class="items">
-                    <a href="#" >
+                    <a href="#">
                         <center>
-                            <img src="../media/css.png" alt="" class="thumbnail">
+                            <img
+                                src="../media/css.png"
+                                alt=""
+                                class="thumbnail"
+                            />
                             <div class="caption">
                                 <h2>CSS3</h2>
                                 <p>Styling at its best.</p>
@@ -58,9 +81,13 @@
                     </a>
                 </div>
                 <div class="items">
-                    <a href="#" >
+                    <a href="#">
                         <center>
-                            <img src="../media/js.png" alt="" class="thumbnail">
+                            <img
+                                src="../media/js.png"
+                                alt=""
+                                class="thumbnail"
+                            />
                             <div class="caption">
                                 <h2>JS</h2>
                                 <p>Add functionality to your webpage.</p>
@@ -72,7 +99,10 @@
         </div>
         <footer>
             <div class="container">
-                <p align="center">Content is Copyright &copy; Chitransh Vishwakarma. All Rights Reserved | Contact Us: +91 9922542931</p>
+                <p align="center">
+                    Content is Copyright &copy; Chitransh Vishwakarma. All
+                    Rights Reserved | Contact Us: +91 9922542931
+                </p>
             </div>
         </footer>
     </body>

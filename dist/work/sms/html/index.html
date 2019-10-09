@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            SMS
+        </title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/home.css" />
+        <link rel="stylesheet" href="../bs/css/bootstrap.css" />
+        <script src="../js/home.js"></script>
+        <script src="../bs/js/bootstrap.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- for touchscreen devices -->
+    </head>
+    <body onload="clr()">
+        <!-- navigation bar  -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">$ Projects/SMS/</a>
+
+            <!-- Toggler/collapsible Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="studLogin.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delStudent.html"
+                            >Delete Student</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <p align="center" id="heading" class="mt-5">
+            Student Management System
+        </p>
+        <p align="center" id="subhead">Add new student</p>
+        <div class="container" align="center">
+            <form action="../php/sendData.php" method="POST" id="myForm">
+                <table cellpadding="15">
+                    <tr>
+                        <td>
+                            <input
+                                type="text"
+                                name="fname"
+                                value=""
+                                placeholder="First Name"
+                                required
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="mname"
+                                value=""
+                                placeholder="Middle Name"
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="lname"
+                                value=""
+                                placeholder="Last Name"
+                                required
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input
+                                type="email"
+                                name="mail"
+                                value=""
+                                placeholder="something@example.com"
+                                required
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="tel"
+                                name="num"
+                                value=""
+                                placeholder="Contact Number"
+                                required
+                            />
+                        </td>
+                        <td>
+                            <input type="date" name="dob" value="" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input
+                                type="text"
+                                name="roll"
+                                value=""
+                                placeholder="Roll Number"
+                                required
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="password"
+                                name="pass"
+                                value=""
+                                placeholder="Create Password"
+                                required
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="username"
+                                value=""
+                                placeholder="Create Username"
+                                required
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="submit" value="Submit" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

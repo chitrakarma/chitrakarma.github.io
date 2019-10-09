@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome | Home
+        </title>
+        <link rel="stylesheet" type="text/css" href="../css/home.css" />
+        <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../bs/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <!-- navigation bar  -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">$ Projects/SMS-UI/</a>
+
+            <!-- Toggler/collapsible Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login" data-toggle="modal"
+                            >Log In</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#register" data-toggle="modal"
+                            >Register</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="../media/bg1.jpg"
+                        alt="bg1"
+                        width="1100"
+                        height="500"
+                    />
+                    <div class="carousel-caption">
+                        <h2>Keep Track of Your Child</h2>
+                        <p>We have all the tools you need!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="../media/bg2.jpg"
+                        alt="bg2"
+                        width="1100"
+                        height="500"
+                    />
+                    <div class="carousel-caption">
+                        <h2>Access Anywhere, Anytime</h2>
+                        <p>Be it Web, Android or IOS</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="../media/bg3.jpg"
+                        alt="New York"
+                        width="1100"
+                        height="500"
+                    />
+                    <div class="carousel-caption">
+                        <h2>Contact Teachers Anytime, no more PTMs!</h2>
+                        <p>Get in touch with teachers anytime you like.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="login">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log In</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <select class="form-control" name="type">
+                                <option>Student</option>
+                                <option>Teacher</option>
+                                <option>Parent</option>
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                        <div class="input-group" style="margin-top: 10px;">
+                            <input type="email" name="email" placeholder="Email" class="form-control" id="emid" required />
+                        </div>
+                        <div class="input-group" style="margin-top: 20px;">
+                            <input type="password" name="password" placeholder="Password" class="form-control" required />
+                        </div>
+                        <div class="form-group" style="margin-top: 20px;">
+                            <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                        </div>
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                            <p class="mr-auto">
+                                <a href="" data-dismiss="modal">
+                                    Forgot password?
+                                </a>
+                            </p>
+                            <p class="text-right" style="display: inline-block;">
+                                <a href="#register" data-toggle="modal" data-dismiss="modal">Create Account</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="register">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Register</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                            <div class="form-group" style="width: 97%; margin-left: 2%;">
+                                <select class="form-control" name="type">
+                                    <option>Student</option>
+                                    <option>Teacher</option>
+                                    <option>Parent</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="width: 48%; display: inline-block;margin-left: 2%;">
+                                <input type="text" name="fname" placeholder="First Name" class="form-control" required />
+                            </div>
+                            <div class="form-group" style="width: 48%; display: inline-block;">
+                                <input type="text" name="lname" placeholder="Last Name" class="form-control" required />
+                            </div>
+                            <div class="form-group" style="width: 48%;margin-left: 2%;display: inline-block;">
+                                <input type="email" name="email" placeholder="Email" class="form-control" required />
+                            </div> 
+                            <div class="form-group" style="width: 48%;display: inline-block;">
+                                <input type="tel" name="contact"  placeholder="Contact" class="form-control" required />
+                            </div>     
+                            <div class="form-group" style="width: 48%;margin-left: 2%;display: inline-block;">
+                                <input type="text" name="username" placeholder="Create Username" class="form-control" required />
+                            </div>
+                            <div class="form-group" style="width: 48%;display: inline-block;">
+                                <input type="password" name="password" placeholder="Create Password" class="form-control" required />
+                            </div>
+                            <div class="form-group" style="width: 97%; margin-left: 2%;">
+                                <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

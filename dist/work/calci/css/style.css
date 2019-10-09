@@ -1,0 +1,27 @@
+table {
+    margin-top: 15%;
+    border-radius: 5px;
+    border-color: white;
+}
+input[type="text"] {
+    height: 3em;
+    width: 17.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 11%;
+    margin-left: 41.3%;
+    border-radius: 5px;
+    text-align: right;
+}
+input[type="button"] {
+    height: 4em;
+    width: 4em;
+    transition: 1s;
+}
+input[type="buttone"]:hover {
+    background-color: skyblue;
+}
+#zero {
+    width: 100%;
+}
