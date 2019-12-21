@@ -1,0 +1,174 @@
+/* Importing Font Nunito From Google Fonts  (IFoN)*/
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+/* Universal Properties (UniProp)*/
+* {
+    transition: 1s;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Smooth Scroll (Smol)*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+}
+
+/* Logo in Overlay  (LO)*/
+.vibeLogo {
+    height: 80px;
+    position: fixed;
+    top: 20px;
+}
+
+/* Main BG Image (BGImg)*/
+.mainContent::after {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/homeBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+/* Overlay Content (OCon)*/
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    transition: all 1000ms;
+    color: white;
+}
+
+/* Overlay Logo (OLog)*/
+.content .logo {
+    height: 180px;
+    width: 180px;
+}
+
+/* Overlay Title (OTi)*/
+.content .title {
+    font-size: 7rem;
+}
+
+/* Overlay Text (OTx)*/
+.content .text {
+    font-size: 2rem;
+}
+
+/* Our Story Title (OST)*/
+.ourStoryTitle {
+    font-size: 5rem;
+}
+
+/* Our Story Image (OSImg)*/
+.ourStoryImage {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateX(-40%);
+    transform: translateY(-50%);
+}
+
+/* Our Story Section (OSSec)*/
+#about {
+    height: 90vh;
+}
+
+/* Fixed Footer  (FF)*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    height: 3rem;
+    padding-top: 12px;
+}
+
+/* Back to Top Button (B2T)*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #d40436;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* Media Queries  (MedQ)*/
+
+@media only screen and (max-width: 720px) {
+    .vibeLogo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .ourStoryImage {
+        display: none;
+    }
+    .content .title {
+        font-size: 5rem;
+    }
+    .content .text {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1140px) and (max-width: 1325px) {
+    .content .title {
+        font-size: 6rem;
+    }
+    .content .text {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1043px) and (max-width: 1139px) {
+    .content .title {
+        font-size: 5rem;
+    }
+    .content .text {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1042px) {
+    .content .title {
+        font-size: 4.5rem;
+    }
+    .content .text {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 520px) {
+    .content .title {
+        font-size: 2.5rem;
+    }
+    .content .text {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- Title  -->
+        <title>Home - Vibe Indian</title>
+
+        <!-- Link Tags -->
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="assets/favicon.png"
+            type="image/x-icon"
+        />
+
+        <!-- Local Style Sheet -->
+        <link rel="stylesheet" href="statics/css/homeStylesheet.css" />
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="statics/css/bootstrap.css" />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body onload="changeBg()">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#"
+                    ><img src="assets/vibeLogo.png" class="vibeLogo"
+                /></a>
+
+                <!-- Responsive Button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapsibleNavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto font-weight-bold">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="index.html"
+                                onclick="changeActive(this)"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                onclick="changeActive(this)"
+                                >States</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                onclick="changeActive(this)"
+                                >Places of Worship</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                onclick="changeActive(this)"
+                                >Spirituality</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                onclick="changeActive(this)"
+                                >Hidden Science</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#about"
+                                onclick="changeActive(this)"
+                                >Our Story</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                onclick="changeActive(this)"
+                                >Our Family</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Background Image  -->
+        <div class="mainContent"></div>
+
+        <!-- Overlay Content  -->
+        <div class="content">
+            <img src="assets/vibeLogo.png" alt="Vibe Indian" class="logo" />
+
+            <!-- Overlay Title -->
+            <div class="title">
+                VIBE INDIAN
+            </div>
+
+            <!-- Overlay Text -->
+            <div class="text font-weight-bold">
+                DESTINATION FOR SEEKERS
+            </div>
+        </div>
+
+        <!-- Our Story  -->
+        <div class="container-fluid mt-5" id="about">
+            <div class="container">
+                <!-- Title  -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="ourStoryTitle">Our Story</h1>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="row">
+                    <!-- Text -->
+                    <div class="col-lg-6 mt-2 text-justify">
+                        <p>
+                            Vibe Indian is a cutting edge initiative that aims
+                            to ignite the love for India on a global scale. It
+                            is built on the unending love and appreciation for
+                            the diversity of the subcontinent. India is a
+                            country with a rich history of people and stories.
+                            At Vibe Indian, we are dedicated to highlight what
+                            made us fall in love with the vibrant place and its
+                            Tri-colour flag.
+                            <br />
+                            <br />
+                            The unique sentiment behind Vibe Indian lies in how
+                            we aim to go beyond the superficial. Being a large
+                            country, India is home to many people with varied
+                            backgrounds. This multicultural nature of the
+                            country allows us to experience the world in one
+                            place. In addition to the stories in the mainstream,
+                            there are so many behind the curtains that deserve
+                            attention.
+                            <br />
+                            <br />
+                            It is impossible to put us in a box as our only
+                            motive is love. This holistic nature of Vibe Indian
+                            is ideal because it makes us a one-stop destination
+                            for Seekers. Look closely, you’ll see that our
+                            hearts shine orange, white and green with pride.
+                        </p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-lg-6">
+                        <img
+                            src="assets/ourStoryHome.png"
+                            alt="Vibe Indian"
+                            class="ourStoryImage"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+
+        <!-- Footer  -->
+        <div class="footer text-center">
+            Copyright &copy; 2019 Made With
+            <i class="fa fa-heart heartIcon" aria-hidden="true"></i> By Vibe
+            Indian.
+        </div>
+
+        <!-- Scripts -->
+        <!-- JQuery -->
+        <script src="statics/js/jquery.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="statics/js/bootstrap.js"></script>
+
+        <!-- Local Script -->
+        <script src="statics/js/homeScript.js"></script>
+    </body>
+</html>
+<!-- EOF -->
