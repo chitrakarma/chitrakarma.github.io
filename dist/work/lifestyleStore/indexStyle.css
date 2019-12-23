@@ -1,0 +1,48 @@
+#banner_image{
+    padding-top: 75px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url("intro-bg_1.jpg") no-repeat center ;
+    background-size: cover;
+}
+#banner_content{
+    position: relative;
+    padding-top: 7.5%;
+    padding-bottom: 7.4%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+footer{
+    padding: 10px 0;
+    background-color: #101010;
+    color: #9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+h2{
+    margin-top: 50px;
+}
+.myForm{
+    margin-top: 70px;
+    padding-bottom: 138px;
+}
+.row-style{
+    margin-top: 10px;
+}
+.formPanel{
+    margin-top: 200px;
+    padding-bottom: 164px;
+}
+.jumbotron{
+    margin-top: 90px;
+}
+.margin-top{
+    margin-top: 100px;
+}
+.changePass{
+    margin-top: 100px;
+    margin-bottom: 262px;
+}
