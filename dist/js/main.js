@@ -35,7 +35,7 @@ function toggleMenu() {
 const working = () => {
     const work = document.querySelector(".sm-heading");
     work.innerHTML =
-        "Nah, I'm kidding! <br /> I'm a Web Developer, Programmer & Designer. <br/>I code in C, C++, Python, Java, JavaScript & PHP. <br/> I like learning new things. ";
+        "Nah, I'm kidding! <br /> I'm a Web Developer, Programmer & Designer. <br/>I code in C, C++, Python, Java, JavaScript & PHP. <br/> I like learning new things. <br />";
 
     setTimeout(() => {
         work.innerHTML += "I hate PHP. <br/>";

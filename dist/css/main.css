@@ -162,6 +162,10 @@
     cursor: alias;
 }
 
+#about {
+    transition: 1s;
+}
+
 @media screen and (max-width: 768px) {
     main {
         -webkit-box-align: center;
@@ -213,13 +217,13 @@
         font-size: 3rem;
     }
     main#home .sm-heading {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 480px) {
     main#home .lg-heading {
-        font-size: 2.5rem;
+        font-size: 4rem;
         text-align: left;
     }
     main#home .sm-heading {
@@ -227,6 +231,45 @@
     }
     main#home .icons {
         text-align: left;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 480px) {
+    main#about .lg-heading {
+        margin-top: 10vh;
+        font-size: 4rem;
+        text-align: left;
+    }
+    main#about .sm-heading {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    main#about .lg-heading {
+        margin-top: 10vh;
+        font-size: 3.2rem;
+        text-align: left;
+    }
+    main#about .sm-heading {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    main#about .lg-heading .me {
+        display: none;
+    }
+
+    main#home .lg-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    main#home .lg-heading {
+        font-size: 2.1rem;
+    }
+    main#home .sm-heading {
+        font-size: 0.6rem;
     }
 }
 
