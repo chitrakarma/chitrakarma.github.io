@@ -104,3 +104,9 @@ body {
         text-align: left;
     }
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-top: 60px;
+    }
+}
