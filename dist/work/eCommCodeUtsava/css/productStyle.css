@@ -1,32 +1,18 @@
-/* Navigation Bar  */
-
-.navbar-brand {
-    font-size: 2rem;
+.product {
+    height: 100vh;
+    padding-top: 100px;
+    position: relative;
 }
 
-.nav-btn {
-    width: 100px;
+.product-items {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-40%);
 }
 
-.btn-outline-secondary {
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-bottom: none;
-    border-top: none;
-}
-
-/* Contact Button  */
-.contact-btn {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 2px solid black;
-    position: fixed;
-    right: 50px;
-    bottom: 30px;
-    padding: 10px;
-}
-
-.color-icon {
-    color: black;
+.product > .row > .section-heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
 }

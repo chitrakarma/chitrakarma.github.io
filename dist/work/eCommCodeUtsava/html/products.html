@@ -9,7 +9,8 @@
 
         <!-- Stylesheets  -->
         <link rel="stylesheet" href="../statics/css/bootstrap.css" />
-        <link rel="stylesheet" href="../css/cartStyle.css" />
+        <link rel="stylesheet" href="../css/commonStyling.css" />
+        <link rel="stylesheet" href="../css/productStyle.css" />
 
         <!-- Font Awesome  -->
         <link
@@ -69,12 +70,21 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html">
-                                <button class="btn btn-outline-light nav-btn">
+                            <a class="nav-link" href="#">
+                                <button
+                                    class="btn btn-outline-light nav-btn"
+                                    data-toggle="modal"
+                                    data-target="#cart"
+                                >
                                     <i
                                         class="fa fa-shopping-cart"
                                         aria-hidden="true"
                                     ></i>
+
+                                    <sup
+                                        >(<span class="total-count"></span
+                                        >)</sup
+                                    >
                                     &nbsp; Cart
                                 </button>
                             </a>
@@ -83,6 +93,745 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Main Content -->
+        <div class="container product text-center" id="product-shirts">
+            <div class="row">
+                <h1 class="section-heading mb-3">Shirts</h1>
+            </div>
+            <div class="row product-items">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/shirts/shirt-a.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">White Shirt</h4>
+                            <p class="card-text">Price: <span class="text-danger">499/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="FS White Shirt"
+                            data-price="499"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/shirts/shirt-b.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Blue Shirt</h4>
+                            <p class="card-text">Price: <span class="text-danger">599/-</span></p>
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="FS Blue Shirt"
+                            data-price="599"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/shirts/shirt-c.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Checks Shirt</h4>
+                            <p class="card-text">Price: <span class="text-danger">699/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="FS Check Shirt"
+                            data-price="699"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/shirts/shirt-d.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Plain White</h4>
+                            <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="HS Plain White"
+                            data-price="399"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product text-center" id="product-tshirts">
+            <div class="row">
+                <h1 class="section-heading mb-3">T-Shirts</h1>
+            </div>
+            <div class="row product-items">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tshirts/tshirt-a.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Gray T-Shirt</h4>
+                            <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="HS Gray T-Shirt"
+                            data-price="299"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tshirts/tshirt-b.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">White T-Shirt</h4>
+                            <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="HS White T-Shirt"
+                            data-price="299"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tshirts/tshirt-c.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Blue T-Shirt</h4>
+                            <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="HS Blue T-Shirt"
+                            data-price="299"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tshirts/tshirt-d.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Red T-Shirt</h4>
+                            <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="HS Red T-Shirt"
+                            data-price="299"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product text-center" id="product-jeans">
+            <div class="row">
+                <h1 class="section-heading mb-3">Jeans</h1>
+            </div>
+            <div class="row product-items">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/jeans/jeans-a.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Printed Jeans</h4>
+                            <p class="card-text">Price: <span class="text-danger">799/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Printed Jeans"
+                            data-price="799"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/jeans/jeans-b.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Urbano Slim</h4>
+                            <p class="card-text">Price: <span class="text-danger">899/-</span></p>
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Urbano Slim Jeans"
+                            data-price="899"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/jeans/jeans-c.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Ripped Jeans</h4>
+                            <p class="card-text">Price: <span class="text-danger">899/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Ripped Jeans"
+                            data-price="899"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/jeans/jeans-d.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Slim Fit</h4>
+                            <p class="card-text">Price: <span class="text-danger">999/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Slim Fit Jeans"
+                            data-price="999"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product text-center" id="product-ethnic">
+            <div class="row">
+                <h1 class="section-heading mb-3">Ethnic Wear</h1>
+            </div>
+            <div class="row product-items">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/ethnic/ethnic-a.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Brown Kurta</h4>
+                            <p class="card-text">Price: <span class="text-danger">999/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Brown Kurta Men"
+                            data-price="999"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/ethnic/ethnic-b.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Blue Kurta</h4>
+                            <p class="card-text">Price: <span class="text-danger">1199/-</span></p>
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Blue Kurta Men"
+                            data-price="1199"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/ethnic/ethnic-c.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Red Kurta</h4>
+                            <p class="card-text">Price: <span class="text-danger">1399/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Red Kurta"
+                            data-price="1399"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/ethnic/ethnic-d.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Printed Kurta</h4>
+                            <p class="card-text">Price: <span class="text-danger">1499/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Printed Black Kurta"
+                            data-price="1499"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product text-center" id="product-sports">
+            <div class="row">
+                <h1 class="section-heading mb-3">Sports Wear</h1>
+            </div>
+            <div class="row product-items">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/sports/sports-a.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Jersey</h4>
+                            <p class="card-text">Price: <span class="text-danger">699/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Blue Jersey"
+                            data-price="699"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/sports/sports-b.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Tracksuit</h4>
+                            <p class="card-text">Price: <span class="text-danger">1199/-</span></p>
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="White Tracksuit"
+                            data-price="1199"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/sports/sports-c.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Yoga Pant</h4>
+                            <p class="card-text">Price: <span class="text-danger">1099/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Yoga Pant Women"
+                            data-price="1099"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/sports/sports-d.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Shorts</h4>
+                            <p class="card-text">Price: <span class="text-danger">699/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Men Shorts"
+                            data-price="699"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product text-center" id="product-tank-tops">
+            <div class="row">
+                <h1 class="section-heading mb-3">Tank Tops</h1>
+            </div>
+            <div class="row product-items">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tank-tops/tank-top-a.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Gray Tank Top</h4>
+                            <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Gray Tank Top"
+                            data-price="399"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tank-tops/tank-top-b.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Black Tank Top</h4>
+                            <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Black Tank Top"
+                            data-price="399"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tank-tops/tank-top-c.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">White Tank Top</h4>
+                            <p class="card-text">Price: <span class="text-danger">499/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="White Tank Top"
+                            data-price="499"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/tank-tops/tank-top-d.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Red Tank Top</h4>
+                            <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Red Tank Top"
+                            data-price="399"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product text-center" id="product-acs">
+            <div class="row">
+                <h1 class="section-heading mb-3">Accessories</h1>
+            </div>
+            <div class="row product-items">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/acs/acs-a.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Leather Wallet</h4>
+                            <p class="card-text">Price: <span class="text-danger">799/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Leather Wallet"
+                            data-price="799"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/acs/acs-b.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Redux Watch</h4>
+                            <p class="card-text">Price: <span class="text-danger">1199/-</span></p>
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Redux Black Watch"
+                            data-price="1199"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/acs/acs-c.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Pink Purse</h4>
+                            <p class="card-text">Price: <span class="text-danger">1399/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Pink Purse"
+                            data-price="1399"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="../assets/products/acs/acs-d.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-block">
+                            <h4 class="card-title mt-4">Sunglasses</h4>
+                            <p class="card-text">Price: <span class="text-danger">1499/-</span></p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="#"
+                            data-name="Multicolor Sunglasses"
+                            data-price="1499"
+                            class="add-to-cart btn btn-primary w-100"
+                            >Add to Cart</a
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="cart"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="cartModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Cart</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table"></table>
+                        <div>
+                            Total price: $<span class="total-cart"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="clear-cart btn btn-danger">Clear Cart</button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Order now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Fixed Contact Button  -->
         <div class="contact-btn">
@@ -314,7 +1063,7 @@
         </div>
 
         <!-- Footer  -->
-        <footer class="page-footer pt-4 text-white bg-secondary pt-5">
+        <footer class="page-footer pt-4 text-white bg-secondary pt-5 mt-5">
             <div class="container text-center text-md-left text-sm-left">
                 <div class="row">
                     <div class="col-md-4 mt-md-0 mt-3">
@@ -389,5 +1138,6 @@
         <!-- Please note that jquery library is required for the carousel to work  -->
         <script src="../statics/js/jquery.js"></script>
         <script src="../statics/js/bootstrap.js"></script>
+        <script src="../js/cart.js"></script>
     </body>
 </html>

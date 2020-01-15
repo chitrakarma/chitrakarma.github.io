@@ -1,18 +1,4 @@
-/* Other  */
-
-body {
-    font-family: sans-serif;
-}
-
-.divider {
-    width: 95%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.card-title {
-    font-size: 2rem;
-}
+/* Other */
 
 .search-products {
     background-image: url(../assets/bg.jpg);
@@ -20,31 +6,10 @@ body {
     background-position: fixed;
 }
 
-/* Background Colors  */
-
-.bg-indigo {
-    background-color: #233d4d;
-}
-
-.bg-dark-blue-gray {
-    background-color: #6b5ca5;
-}
-
-/* Navigation Bar  */
-
-.navbar-brand {
-    font-size: 2rem;
-}
-
-.nav-btn {
-    width: 100px;
-}
-
-.btn-outline-secondary {
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-bottom: none;
-    border-top: none;
+.card-btn {
+    width: 45%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Search Box  */
@@ -58,7 +23,6 @@ body {
 }
 
 /* Carousel  */
-
 #myCarousel {
     height: 100vh;
     background-color: #636363;
@@ -67,32 +31,6 @@ body {
 
 .carousel-inner > .carousel-item > img {
     width: 100%;
-}
-
-/* Contact Button  */
-.contact-btn {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 2px solid black;
-    position: fixed;
-    right: 50px;
-    bottom: 30px;
-    padding: 10px;
-}
-
-.color-icon {
-    color: black;
-}
-
-/* Footer  */
-.footer-link:hover {
-    text-decoration: none;
-}
-
-.footer-header {
-    font-size: 2.5rem;
-    color: black;
 }
 
 /* Media Queries */

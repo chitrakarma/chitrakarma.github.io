@@ -9,6 +9,7 @@
 
         <!-- Stylesheets  -->
         <link rel="stylesheet" href="statics/css/bootstrap.css" />
+        <link rel="stylesheet" href="css/commonStyling.css" />
         <link rel="stylesheet" href="css/indexStyle.css" />
 
         <!-- Font Awesome  -->
@@ -54,12 +55,21 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/cart.html">
-                                <button class="btn btn-outline-light nav-btn">
+                            <a class="nav-link" href="#">
+                                <button
+                                    class="btn btn-outline-light nav-btn"
+                                    data-toggle="modal"
+                                    data-target="#cart"
+                                >
                                     <i
                                         class="fa fa-shopping-cart"
                                         aria-hidden="true"
                                     ></i>
+
+                                    <sup
+                                        >(<span class="total-count"></span
+                                        >)</sup
+                                    >
                                     &nbsp; Cart
                                 </button>
                             </a>
@@ -68,6 +78,52 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Cart Modal  -->
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="cart"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="cartModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Cart</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table"></table>
+                        <div>
+                            Total price: Rs.<span class="total-cart"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="clear-cart btn btn-danger">Clear Cart</button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Order now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Carousel  -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -155,12 +211,24 @@
                             alt="Card image cap"
                         />
                         <div class="card-body text-center">
-                            <h5 class="card-title">Tank Tops</h5>
+                            <h5 class="card-title">Tank Top</h5>
                             <p class="card-text">
-                                Explore more Tank Tops
+                                <strong class="text-danger">699/-</strong>
                             </p>
-                            <a href="#" class="btn btn-primary w-100"
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a
+                                href="html/products.html#product-tank-tops"
+                                class="btn btn-primary card-btn"
                                 >Explore</a
+                            >
+                            <a
+                                href="#"
+                                data-name="Tank Top"
+                                data-price="699"
+                                class="add-to-cart btn btn-primary card-btn"
+                                >Add to Cart</a
                             >
                         </div>
                     </div>
@@ -175,10 +243,21 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Shirts</h5>
                             <p class="card-text">
-                                Explore more Shirts
+                                <strong class="text-danger">499/-</strong>
                             </p>
-                            <a href="#" class="btn btn-primary w-100"
+                        </div>
+                        <div class="card-footer">
+                            <a
+                                href="html/products.html#product-shirt"
+                                class="btn btn-primary card-btn"
                                 >Explore</a
+                            >
+                            <a
+                                href="#"
+                                data-name="FS Shirt"
+                                data-price="499"
+                                class="add-to-cart btn btn-primary card-btn"
+                                >Add to Cart</a
                             >
                         </div>
                     </div>
@@ -193,10 +272,21 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">T-Shirts</h5>
                             <p class="card-text">
-                                Explore more T-Shirt Designs
+                                <strong class="text-danger">299/-</strong>
                             </p>
-                            <a href="#" class="btn btn-primary w-100"
+                        </div>
+                        <div class="card-footer">
+                            <a
+                                href="html/products.html#product-tshirts"
+                                class="btn btn-primary card-btn"
                                 >Explore</a
+                            >
+                            <a
+                                href="#"
+                                data-name="HS RN T-Shirt"
+                                data-price="299"
+                                class="add-to-cart btn btn-primary card-btn"
+                                >Add to Cart</a
                             >
                         </div>
                     </div>
@@ -206,7 +296,7 @@
 
         <hr class="divider" />
 
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <div class="row text-center">
                 <div class="col-lg-12">
                     <h1>Explore More Categories</h1>
@@ -225,9 +315,13 @@
                             <p class="card-text">
                                 Explore Accessories
                             </p>
-                            <a href="#" class="btn btn-primary w-100"
-                                >Explore</a
-                            >
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="html/products.html#product-acs"
+                            class="btn btn-primary w-100"
+                            >Explore</a
+                        >
                         </div>
                     </div>
                 </div>
@@ -243,9 +337,13 @@
                             <p class="card-text">
                                 Explore Ethnic Wear
                             </p>
-                            <a href="#" class="btn btn-primary w-100"
-                                >Explore</a
-                            >
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="html/products.html#product-ethnic"
+                            class="btn btn-primary w-100"
+                            >Explore</a
+                        >
                         </div>
                     </div>
                 </div>
@@ -261,9 +359,13 @@
                             <p class="card-text">
                                 Explore more jeans
                             </p>
-                            <a href="#" class="btn btn-primary w-100"
-                                >Explore</a
-                            >
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="html/products.html#product-jeans"
+                            class="btn btn-primary w-100"
+                            >Explore</a
+                        >
                         </div>
                     </div>
                 </div>
@@ -279,9 +381,13 @@
                             <p class="card-text">
                                 Explore more sports wear
                             </p>
-                            <a href="#" class="btn btn-primary w-100"
-                                >Explore</a
-                            >
+                        </div>
+                        <div class="card-footer">
+                            <a
+                            href="html/products.html#product-sports"
+                            class="btn btn-primary w-100"
+                            >Explore</a
+                        >
                         </div>
                     </div>
                 </div>
@@ -297,12 +403,18 @@
                             <div class="container">
                                 <div class="col-lg-10 offset-sm-1">
                                     <div class="input-group">
-                                        <input class="form-control" type="text" placeholder="Search Products"/>
+                                        <input
+                                            class="form-control"
+                                            type="text"
+                                            placeholder="Search Products"
+                                        />
                                         <span class="input-group-append">
                                             <button class="btn">
-                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                                <i
+                                                    class="fa fa-search"
+                                                    aria-hidden="true"
+                                                ></i>
                                             </button>
-                                            
                                         </span>
                                     </div>
                                 </div>
@@ -559,7 +671,9 @@
 
                     <hr class="clearfix w-100 d-md-none pb-3" />
 
-                    <div class="col-md-3 mb-md-0 mb-3 text-lg-right text-sm-left">
+                    <div
+                        class="col-md-3 mb-md-0 mb-3 text-lg-right text-sm-left"
+                    >
                         <h5 class="footer-header">Products</h5>
 
                         <ul class="list-unstyled">
@@ -580,7 +694,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-5 mb-md-0 mb-3 text-lg-right text-sm-left">
+                    <div
+                        class="col-md-5 mb-md-0 mb-3 text-lg-right text-sm-left"
+                    >
                         <h5 class="footer-header ">Delivery Services</h5>
 
                         <ul class="list-unstyled">
@@ -614,5 +730,6 @@
         <!-- Please note that jquery library is required for the carousel to work  -->
         <script src="statics/js/jquery.js"></script>
         <script src="statics/js/bootstrap.js"></script>
+        <script src="js/cart.js"></script>
     </body>
 </html>
