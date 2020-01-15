@@ -1,0 +1,106 @@
+/* Abbreviations */
+
+/* Other  */
+
+body {
+    font-family: sans-serif;
+}
+
+.divider {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+/* Background Colors  */
+
+.bg-indigo {
+    background-color: #233d4d;
+}
+
+.bg-dark-blue-gray {
+    background-color: #6b5ca5;
+}
+
+/* Navigation Bar  */
+
+.bg-nav {
+    background-color: #c6d8ff;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-btn {
+    width: 100px;
+}
+
+.btn-outline-secondary {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+}
+
+.form-inline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Carousel  */
+
+#myCarousel {
+    height: 100vh;
+    background-color: #636363;
+    overflow: hidden;
+}
+
+.carousel-inner > .carousel-item > img {
+    width: 100%;
+}
+
+/* Contact Button  */
+.contact-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    padding: 10px;
+}
+
+.color-icon {
+    color: black;
+}
+
+/* Footer  */
+.footer-link:hover {
+    text-decoration: none;
+}
+
+.footer-header {
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+    #myCarousel {
+        display: none;
+    }
+
+    .nav-btn {
+        border: none;
+        margin-left: 0;
+        text-align: left;
+    }
+}
