@@ -1,0 +1,110 @@
+body{
+    overflow-x: hidden;
+}
+
+#section-one-logo{
+    margin: 0 auto;             /* To keep the logo at the center of the screen  */
+}
+
+#logo{
+    transition: 1s;
+    padding-bottom: 10%;
+}
+
+#about-heading-container{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.about{
+    background-image: url("../media/about.jpg");
+    height: 600px;
+    padding-top: 10%;
+}
+
+.transparent-bg-black{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    color: rgb(252, 255, 233);
+}
+
+#about-heading{
+    font-size: 12vw;
+}
+
+#about-sub-heading{
+    font-style: 'monospace'; 
+    font-weight: bold; 
+    font-size: 2vw; 
+    letter-spacing: 1.1vw; 
+    margin-top: -20px;
+}
+
+#about-content{
+    font-weight: 900; 
+    color: white;
+}
+
+#indimage{
+    height: 300px; 
+    border-radius: 10px;
+}
+
+#artimage{
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+#surimage{
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+#indsight{
+    background-image: url("../media/sec1_bg.jpg");
+}
+
+#artwork{
+    background-image: url("../media/sec2_bg.jpg");
+    margin-top: -30px;
+}
+
+#survey{
+    background-image: url("../media/sec3_bg.jpg");
+    height: 662px;
+}
+
+#indsight,
+#artwork,
+#survey{
+    background-size: cover;
+    height: 720px;
+    background-attachment: fixed;
+    padding-top: 15%;
+}
+
+#connect{
+    background-image: url("../media/connect.jpg");
+    background-size: cover; 
+    height: 662px;
+    padding-top: 15%;
+}
+
+#connect-heading{
+    font-family: 'Times New Roman', Times, serif; font-weight: 900; color: white; letter-spacing: 1.3vw;
+}
+
+#connect-text{
+    margin-top: 1%; font-weight: 500; color: white; 
+}
+
+#contact{
+    height: 660px;
+    background-image: url("../media/contact.jpg");
+    background-size: cover;
+}
